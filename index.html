@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Welcome to My Personal Web Page" />
+    <title>@kujudesu-71230983-Personal Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p>
+        <b><h1>Welcome to My Personal Web Page</h1></b>
+      </p>
+    </header>
+    <div style="display: flex; flex-direction: row">
+      <section id="foto">
+        <img
+          src="WhatsApp Image 2023-12-12 at 18.17.28_ae731c2a.jpg"
+          width="300px"
+        />
+      </section>
+      <div>
+        <section id="tentang-saya">
+          <p>
+            <b>
+              <h2>About me</h2>
+            </b>
+          </p><br>
+          <h3>Delvin Cappinova</h3><br>
+          <ul>
+            <li><b>@kujudesu</b></li><br>
+            <li><b>Yogyakarta, Indonesia</b></li><br>
+            <li><b>Universitas Kristen Duta Wacana</b></li><br>
+          </ul>
+        </section>
+
+        <section id="keterampilan">
+          <h3>Skillset</h3>
+          <ol>
+            <li>HTML</li>
+            <li>C</li>
+            <li>Python</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+
+    <button id="tombolGantiWarna" onclick="gantiWarnaRandom()">
+      <p>Ganti Warna</p>
+    </button>
+
+    <footer>
+      <p>Thank you for visiting for my personal web page</p>
+    </footer>
+
+    <script>
+      const bodyElement = document.body;
+
+      function gantiWarnaRandom() {
+        const warnaList = ["#ffffff", "#ff0000", "#008000", "#0000ff"];
+        const randomIndex = Math.floor(Math.random() * warnaList.length);
+        const warnaRandom = warnaList[randomIndex];
+        bodyElement.style.backgroundColor = warnaRandom;
+      }
+
+      const tombolGantiWarna = "gantiWarnaRandom";
+      tombolGantiWarna;
+    </script>
+  </body>
+</html>
